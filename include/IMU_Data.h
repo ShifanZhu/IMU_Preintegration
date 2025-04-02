@@ -17,6 +17,8 @@
 //Save IMU sensor parameters and raw data
 class IMUData{
 public:
+  // When a member variable contains an Eigen object, the following macro overload on new
+  // is required to ensure pointer alignment
   EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 
   IMUData() = default;
